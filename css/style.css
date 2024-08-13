@@ -78,7 +78,9 @@ p {
 
 /* Button */
 .button {
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 
 	background-color: var(--accent-color);
 	color: var(--primary-text-color);
@@ -92,10 +94,14 @@ p {
 	border: none;
 }
 
-.button.ptimary {
+.apply-btn.primary{
 	background-color: var(--primary-text-color);
 	color: var(--accent-color);
 	min-width: 169px;
+}
+.apply-btn .icon{
+	fill: currentColor;
+	margin-left: 12px;
 }
 
 .button.secondary {
@@ -103,6 +109,13 @@ p {
 }
 
 /* Site Nav */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: var(--primary-background-color);
+	box-shadow: 0 10px 8px 2px rgba(0, 0, 0, 0.1);
+}
 .header-nav {
 	max-width: 1424px;
 	margin: 0 auto;
@@ -148,6 +161,21 @@ p {
 /* Hero */
 .section.hero {
 	padding-bottom: 128px;
+	position: relative;
+}
+.section.hero::after{
+	content: "";
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: -50px;
+	width: 32px;
+	height: 100px;
+	background-image: url("../images/down-arrow.png");
+}
+.hero-box{
+	position: relative;
+	margin-bottom: 80px;
 }
 
 .hero-title {
@@ -156,11 +184,22 @@ p {
 	text-align: center;
 	margin-bottom: 40px;
 }
+.hero-title::after{
+	content: '';
+	display: block;
+	position: absolute;
+	right: 54px;
+	bottom: 64px;
+	width: 277px;
+	height: 24px;
+	background-image: url(../images/traced2.png);
+
+}
 
 .hero-buttons {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 80px;
+	
 }
 
 .hero-buttons .secondary {
@@ -193,12 +232,18 @@ p {
 
 .transition-link {
 	color: var(--accent-color);
+	display: inline-flex;
+
+	gap: 8px;
 
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 1.33;
 
 	cursor: pointer;
+}
+.transition-link .icon{
+	fill: var(--accent-color);
 }
 
 .projects {
@@ -247,6 +292,21 @@ p {
 }
 
 /* What's new */
+.section-box.new{
+	position: relative;
+}
+.icon-new::after{
+	content: "";
+	position: absolute;
+	width: 62.50px; 
+	top: -35px;
+	right: 132.5px;
+	height: 60px;
+	background-image: url("../images/sparkle.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
 
 .rounds {
 	display: flex;
@@ -283,7 +343,39 @@ p {
 	line-height: 1.33;
 }
 
+.section-box.questions{
+	position: relative;
+}
+.icon-questions::after{
+	content: "";
+	position: absolute;
+	width: 230px; 
+	top: -8px;
+	right: 21px;
+	height: 64px;
+	background-image: url("../images/oval.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
 /* App Process */
+
+.section-box.process{
+	position: relative;
+}
+.icon-process::after{
+	content: "";
+	position: absolute;
+	width: 161px; 
+	top: 48px;
+	right: 112px;
+	height: 16px;
+	background-image: url("../images/traced.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
 .process-list {
 	display: flex;
 	gap: 24px;
@@ -295,6 +387,37 @@ p {
 	border-radius: 16px;
 	padding: 25px;
 	min-height: 480px;
+}
+.card.one{
+	position: relative;
+}
+.card.one::after{
+	content: "";
+	position: absolute;
+	width: 120px; 
+	height: 40px;
+	top: 1px;
+	right: -60px;
+	z-index: 1;
+	background-image: url("../images/right-arrow-curved.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center;
+}
+.card.two{
+	position: relative;
+}
+.card.two::after{
+	content: "";
+	position: absolute;
+	width: 120px; 
+	height: 40px;
+	bottom: 107px;
+	right: -60px;
+	background-image: url("../images/right-arrow-curved1.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center;
 }
 .process-list .number {
 	font-family: "Nanum Pen Script", cursive;
@@ -357,6 +480,7 @@ p {
 	gap: 32px;
 	align-items: center;
 }
+
 .footer-list {
 	display: flex;
 	gap: 32px;
@@ -367,9 +491,19 @@ p {
 	font-weight: 400;
 	line-height: 1.5;
 	padding: 18px 0;
+	display: flex;
+	align-items: center;
+	gap: 8px;
 }
+.footer-list .external-link-icon {
+	fill: var(--secondary-text-color);
+}
+
 .footer-nav .image-box {
 	display: flex;
 	gap: 32px;
-	align-items: center;
+}
+
+.social-icon{
+fill: var(--secondary-text-color);
 }

@@ -22,7 +22,9 @@
     <header>
         <nav class="header-nav">
             <a href="./index.html" class="logo">
-                <img src="/images/logo.svg" width="112" alt="Company logo">
+                <svg class="" width="112" height="65">
+                    <use href="./images/sprite.svg#icon-logo"></use>
+                </svg>
             </a>
             <div class="box">
                 <ul class="nav">
@@ -40,17 +42,22 @@
         <!-- Hero -->
         <section class="hero section">
             <div class="main-container">
-                <h1 class="hero-title">Powering the future of dYdX through community grants</h1>
-                <div class="hero-buttons">
-                    <a href="#" class="button secondary">Discover RFPs</a>
-                    <a href="#" class="button">Apply for grant</a>
+                <div class="hero-box">
+                    <h1 class="hero-title">Powering the future of dYdX through community grants</h1>
+                    <div class="hero-buttons">
+                        <a href="#" class="button secondary">Discover RFPs</a>
+                        <a href="#" class="button apply-btn">Apply for grant
+                            <svg class="icon" width="16" height="16">
+                                <use href="./images/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="hero-stats">
                     <div class="data"><span class="indicators">100+ </span> projects funded</div>
                     <div class="data"><span class="indicators">$3+ million</span> awarded</div>
                     <div class="data"><span class="indicators">400+ </span>projects funded</div>
                 </div>
-                <div class="arrow"></div>
             </div>
         </section>
         <!-- Projects -->
@@ -62,7 +69,11 @@
                         risus,
                         consectetur ut bibendum
                         non, gravida non libero.</p>
-                    <a href="#" class="transition-link">View all funded projects</a>
+                    <a href="#" class="transition-link">View all funded projects
+                        <svg class="icon" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </a>
                 </div>
                 <ul class="projects">
                     <li class="projects-card">
@@ -79,8 +90,8 @@
                                 diving across different assets and historical analysis of changing rates. It will also
                                 include API functionalities to allow developer access.</p>
                         </div>
-                        <div><img class="icon" src="/images/ avatar8.svg" alt="icon"><img class="icon"
-                                src="./images/avatar6.svg" alt="icon"></div>
+                        <div><img class="icon" src="/images/avatar1.jpg" alt="icon"><img class="icon"
+                                src="./images/avatar2.jpg" alt="icon"></div>
                     </li>
                     <li class="projects-card">
                         <div>
@@ -95,8 +106,8 @@
                                 to
                                 tap into Tradingview resources and test out different ...</p>
                         </div>
-                        <div><img class="icon" src="/images/avatar7.svg" alt="icon"><img class="icon"
-                                src="/images/avatar4.svg" alt="icon"><img class="icon" src="./images/avatar5.svg"
+                        <div><img class="icon" src="/images/avatar3.jpg" alt="icon"><img class="icon"
+                                src="/images/avatar4.jpg" alt="icon"><img class="icon" src="./images/avatar5.jpg"
                                 alt="icon"></div>
                     </li>
                     <li class="projects-card">
@@ -112,8 +123,8 @@
                                 optimal trading strategies for rewards maximization. The paper will be marketed across
                                 several platforms and shared among trading circles to help readership.</p>
                         </div>
-                        <div><img class="icon" src="/images/avatar3.svg" alt="icon"><img class="icon"
-                                src="./images/avatar1.svg" alt="icon"><img class="icon" src="./images/avatar2.svg"
+                        <div><img class="icon" src="/images/avatar6.jpg" alt="icon"><img class="icon"
+                                src="./images/avatar7.jpg" alt="icon"><img class="icon" src="./images/avatar8.jpg"
                                 alt="icon"></div>
                     </li>
                     <li class="projects-card">
@@ -129,7 +140,7 @@
                                 organization
                                 structure, reporting & accountability, contributors, funding, and more.</p>
                         </div>
-                        <div><img class="icon" src="/images/avatar9.svg" alt="icon"></div>
+                        <div><img class="icon" src="/images/avatar9.jpg" alt="icon"></div>
                     </li>
                 </ul>
             </div>
@@ -137,13 +148,17 @@
         <!-- What's new -->
         <section class="section">
             <div class="main-container">
-                <div class="section-box">
-                    <h2 class="section-title">What’s new?</h2>
+                <div class="section-box new">
+                    <h2 class="section-title icon-new">What’s new?</h2>
                     <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla
                         risus,
                         consectetur ut bibendum
                         non, gravida non libero.</p>
-                    <a href="#" class="transition-link">Read more on our blog</a>
+                    <a href="#" class="transition-link">Read more on our blog
+                        <svg class="icon" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </a>
                 </div>
                 <ul class="rounds">
                     <li class="rounds-card">
@@ -168,8 +183,8 @@
         <!-- Questions -->
         <section class="section">
             <div class="main-container">
-                <div class="section-box">
-                    <h2 class="section-title">Frequently asked questions</h2>
+                <div class="section-box questions">
+                    <h2 class="section-title icon-questions">Frequently asked questions</h2>
                     <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla
                         risus,
                         consectetur ut bibendum non, gravida non libero.</p>
@@ -177,24 +192,40 @@
                 <ul class="questions-list">
                     <li>
                         <p>How do I apply?</p>
+                        <svg class="" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-plus"></use>
+                        </svg>
                     </li>
                     <li>
-                        <p>Can I apply as a U.S. based person/company?</p>
+                        <p>Can I apply as a U.S. based person/company?</p> <svg class="" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-plus"></use>
+                        </svg>
                     </li>
                     <li>
-                        <p>How will I be compensated?</p>
+                        <p>How will I be compensated?</p> <svg class="" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-plus"></use>
+                        </svg>
                     </li>
                     <li>
-                        <p>What type of project will qualify for a Grant?</p>
+                        <p>What type of project will qualify for a Grant?</p> <svg class="" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-plus"></use>
+                        </svg>
                     </li>
                     <li>
-                        <p>What is the application timeline? When can I expect to hear back?</p>
+                        <p>What is the application timeline? When can I expect to hear back?</p> <svg class=""
+                            width="24" height="24">
+                            <use href="./images/sprite.svg#icon-plus"></use>
+                        </svg>
                     </li>
                     <li>
-                        <p>How can I increase my chances of getting funded?</p>
+                        <p>How can I increase my chances of getting funded?</p> <svg class="" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-plus"></use>
+                        </svg>
                     </li>
                     <li>
-                        <p>How often do you approve new Rounds of funding?</p>
+                        <p>How often do you approve new Rounds of funding?</p> <svg class="" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-plus"></use>
+                        </svg>
                     </li>
                 </ul>
             </div>
@@ -202,21 +233,21 @@
         <!-- App Process  -->
         <section class="section">
             <div class="secondary-container">
-                <div class="section-box">
-                    <h2 class="section-title">Application process</h2>
+                <div class="section-box process">
+                    <h2 class="section-title icon-process">Application process</h2>
                     <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla
                         risus,
                         consectetur ut bibendum non, gravida non libero.</p>
                 </div>
                 <ul class="process-list">
-                    <li class="card">
+                    <li class="card one">
                         <p class="number">1</p>
                         <h3 class="title">Apply</h3>
                         <p class="text">Submit a complete application to the dYdX Grants Team including as many details
                             as possible about
                             the proposed idea and their background.</p>
                     </li>
-                    <li class="card">
+                    <li class="card two">
                         <p class="number">2</p>
                         <h3 class="title">Interview</h3>
                         <p class="text">If your application is selected, the dYdX Grants will conduct 1-2 interviews to
@@ -240,7 +271,11 @@
                 <div class="create-box">
                     <p class="text">Have a project in mind?</p>
                     <h2 class="section-title title">Let’s create something awesome.</h2>
-                    <a href="#" class="button ptimary">Apply for grant</a>
+                    <a href="#" class="button apply-btn primary">Apply for grant
+                        <svg class="icon" width="16" height="16">
+                            <use href="./images/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
@@ -251,21 +286,39 @@
             <div class="footer-nav">
                 <div>
                     <div class="box">
-                        <a href=""><img src="./images/masterAvatar.svg" alt=""></a>
+                        <a href="">
+                            <svg class="logo-icon" width="60" height="60">
+                                <use href="./images/sprite.svg#icon-master-avatar"></use>
+                            </svg>
+                        </a>
                         <ul class="footer-list">
                             <li><a class="link" href="">About</a></li>
                             <li><a class="link" href="">FAQ</a></li>
                             <li><a class="link" href="">Brand assets</a></li>
-                            <li><a class="link" href="">dYdX Foundation <img class="external-link"
-                                        src="./images/external-link.svg" alt="" width="16"></a></li>
-                            <li><a class="link" href="">dYdX trading <img class="external-link"
-                                        src="./images/external-link.svg" alt="" width="16"></a></li>
+                            <li><a class="link" href="">dYdX Foundation
+                                    <svg class="external-link-icon" width="16" height="16">
+                                        <use href="./images/sprite.svg#icon-external-link"></use>
+                                    </svg>
+                                </a></li>
+                            <li><a class="link" href="">dYdX trading
+                                    <svg class="external-link-icon" width="16" height="16">
+                                        <use href="./images/sprite.svg#icon-external-link"></use>
+                                    </svg>
+                                </a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="image-box">
-                    <img src="./images/vector.svg" width="24" alt="">
-                    <img src="./images/vector1.svg" width="24" alt="">
+                    <a class="link" href="#">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/sprite.svg#twitter-icon"></use>
+                        </svg>
+                    </a>
+                    <a class="link" href="#">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/sprite.svg#discord-icon"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
